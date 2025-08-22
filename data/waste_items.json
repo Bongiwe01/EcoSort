@@ -1,0 +1,346 @@
+[
+  {
+    "item": "Plastic Bottle",
+    "category": "Recycle",
+    "method": "Rinse and place in plastic recycling bin",
+    "tip": "Recycled into new bottles, containers, or textile fibers.",
+    "why": "Plastic bottles are melted and remolded into new plastic products, reducing plastic waste.",
+    "aliases": ["Plastic container", "Plastic jar", "Soda bottle", "Water bottle"]
+  },
+  {
+    "item": "Banana Peel",
+    "category": "Compost",
+    "method": "Place in compost bin or organic waste",
+    "tip": "Cut into smaller pieces to speed up decomposition.",
+    "why": "Composting banana peels enriches soil with nutrients and reduces landfill waste.",
+    "aliases": []
+  },
+  {
+    "item": "Milk Carton",
+    "category": "Recycle",
+    "method": "Rinse, flatten, and place in carton recycling",
+    "tip": "Milk cartons are made from paperboard with a plastic lining and can be recycled into paper products.",
+    "why": "Recycling milk cartons saves trees and reduces landfill.",
+    "aliases": ["Juice carton", "Beverage carton"]
+  },
+  {
+    "item": "Glass Container",
+    "category": "Recycle",
+    "method": "Rinse and place in glass recycling bin",
+    "tip": "Remove caps and lids; recycle metal separately.",
+    "why": "Glass is endlessly recyclable and can be remade into new bottles or jars.",
+    "aliases": ["Glass Jar", "Glass Bottle"]
+  },
+  {
+    "item": "Styrofoam",
+    "category": "Trash",
+    "method": "Dispose in general waste",
+    "tip": "Most curbside programs do not accept Styrofoam.",
+    "why": "Styrofoam breaks down very slowly and contaminates recycling streams.",
+    "aliases": ["Styrofoam Cup", "Styrofoam Packaging"]
+  },
+  {
+    "item": "Eggshells",
+    "category": "Compost",
+    "method": "Crush and add to compost pile",
+    "tip": "Eggshells add calcium and minerals to compost.",
+    "why": "Provides essential nutrients for plants when composted.",
+    "aliases": []
+  },
+  {
+    "item": "Pizza Box",
+    "category": "Trash",
+    "method": "Dispose of in general waste bin",
+    "tip": "Greasy or food-soiled cardboard contaminates recycling streams.",
+    "why": "Contaminated cardboard cannot be recycled and must be landfilled or composted if accepted.",
+    "aliases": []
+  },
+  {
+    "item": "Aluminium Can",
+    "category": "Recycle",
+    "method": "Rinse and place in metal recycling bin",
+    "tip": "Recycling aluminum saves up to 95% of the energy compared to making new aluminum.",
+    "why": "Aluminum is melted down and reused indefinitely without quality loss.",
+    "aliases": ["Tin Can", "Soda Can"]
+  },
+  {
+    "item": "Used Tissue",
+    "category": "Trash",
+    "method": "Place in general waste bin",
+    "tip": "Due to contamination, tissues are not recyclable or compostable.",
+    "why": "Prevent spread of germs and contamination in recycling facilities.",
+    "aliases": ["Paper Tissue"]
+  },
+  {
+    "item": "Newspaper",
+    "category": "Recycle",
+    "method": "Place in paper recycling bin",
+    "tip": "Avoid recycling wet or food-stained newspaper.",
+    "why": "Recycled paper is made into new paper products, reducing tree harvesting.",
+    "aliases": []
+  },
+  {
+    "item": "Tea Bag",
+    "category": "Compost",
+    "method": "Remove staples if any, and place in compost bin",
+    "tip": "Ensure tea bags are plastic-free for composting.",
+    "why": "Tea bags break down and enrich compost with organic matter.",
+    "aliases": []
+  },
+  {
+    "item": "Plastic Bag",
+    "category": "Recycle",
+    "method": "Take to special plastic bag recycling drop-off points",
+    "tip": "Do not place in curbside recycling; bags clog machines.",
+    "why": "Plastic bags can be recycled into plastic lumber or new bags if properly processed.",
+    "aliases": ["Shopping Bag", "Grocery Bag"]
+  },
+  {
+    "item": "Battery",
+    "category": "Hazardous",
+    "method": "Take to battery recycling facility or collection point",
+    "tip": "Store safely and avoid landfill due to toxic chemicals.",
+    "why": "Recycling prevents toxic metals from polluting environment.",
+    "aliases": ["AA Battery", "AAA Battery", "Lithium Battery"]
+  },
+  {
+    "item": "Paper Towel Roll",
+    "category": "Recycle",
+    "method": "Place in paper recycling bin",
+    "tip": "Ensure it’s clean and not contaminated with food or oil.",
+    "why": "Cardboard tubes are recyclable and reused in paper products.",
+    "aliases": []
+  },
+  {
+    "item": "Grass Clippings",
+    "category": "Compost",
+    "method": "Add to compost bin or use as mulch in garden",
+    "tip": "Mix with dry leaves for balanced compost.",
+    "why": "Adds nitrogen and organic matter to soil.",
+    "aliases": ["Lawn Clippings"]
+  },
+  {
+    "item": "Peanut Shells",
+    "category": "Compost",
+    "method": "Add to compost bin",
+    "tip": "Crush before composting to speed up decomposition.",
+    "why": "Adds carbon-rich material to compost.",
+    "aliases": []
+  },
+  {
+    "item": "Electronic Waste",
+    "category": "Hazardous",
+    "method": "Take to e-waste recycling facility",
+    "tip": "Never place in curbside bins due to toxic components.",
+    "why": "Contains metals and chemicals that can be recovered and reused.",
+    "aliases": ["E-waste", "Old Electronics"]
+  },
+  {
+    "item": "Wine Cork",
+    "category": "Compost/Recycle",
+    "method": "Compost if natural cork; recycle through cork recycling programs",
+    "tip": "Avoid composting synthetic corks.",
+    "why": "Natural cork is biodegradable and enriches compost.",
+    "aliases": []
+  },
+  {
+    "item": "Yard Leaves",
+    "category": "Compost",
+    "method": "Add to compost bin or use as garden mulch",
+    "tip": "Shred leaves for faster breakdown.",
+    "why": "Adds carbon and improves soil health.",
+    "aliases": []
+  },
+  {
+    "item": "Cereal Box",
+    "category": "Recycle",
+    "method": "Flatten and place in paper recycling bin",
+    "tip": "Remove plastic liner before recycling.",
+    "why": "Cardboard is recycled into new paper products.",
+    "aliases": ["Cornflakes Box", "Breakfast Cereal Box"]
+  },
+  {
+    "item": "Avocado Pit",
+    "category": "Compost",
+    "method": "Add to compost but expect slow breakdown",
+    "tip": "Chop or grind for faster composting.",
+    "why": "Organic waste enriches compost and soil quality.",
+    "aliases": []
+  },
+  {
+    "item": "Expired Medicine",
+    "category": "Hazardous",
+    "method": "Return to pharmacy take-back programs",
+    "tip": "Do not flush or throw in trash.",
+    "why": "Prevents water contamination and misuse.",
+    "aliases": ["Old Medicine", "Unused Medication"]
+  },
+  {
+    "item": "Cardboard Box",
+    "category": "Recycle",
+    "method": "Flatten and place in cardboard recycling",
+    "tip": "Remove non-paper tape and packaging.",
+    "why": "Recycled cardboard is used for new boxes and paper products.",
+    "aliases": ["Moving Box", "Shipping Box"]
+  },
+  {
+    "item": "Coffee Grounds",
+    "category": "Compost",
+    "method": "Add to compost bin or garden",
+    "tip": "Coffee grounds add nitrogen and improve soil quality.",
+    "why": "Organic waste reduces landfill methane emissions.",
+    "aliases": ["Used Coffee", "Coffee Residue"]
+  },
+  {
+    "item": "Plastic Straw",
+    "category": "Trash",
+    "method": "Dispose in general waste bin",
+    "tip": "Plastic straws are not recyclable and pollute oceans.",
+    "why": "Avoid single-use plastics where possible.",
+    "aliases": []
+  },
+  {
+    "item": "Paper Cup",
+    "category": "Trash",
+    "method": "Dispose in general waste",
+    "tip": "Most paper cups have plastic lining, making them non-recyclable.",
+    "why": "They contaminate paper recycling streams.",
+    "aliases": ["Coffee Cup", "Disposable Cup"]
+  },
+  {
+    "item": "Metal Cutlery",
+    "category": "Recycle",
+    "method": "Take to scrap metal recycling facility",
+    "tip": "Donate if reusable or recycle as metal scrap.",
+    "why": "Metals can be melted and reused indefinitely.",
+    "aliases": ["Fork", "Spoon", "Knife"]
+  },
+  {
+    "item": "Orange Peel",
+    "category": "Compost",
+    "method": "Add to compost bin",
+    "tip": "Chop into smaller pieces to speed composting.",
+    "why": "Organic peel waste enriches soil and reduces landfill.",
+    "aliases": []
+  },
+  {
+    "item": "Plastic Container",
+    "category": "Recycle",
+    "method": "Rinse and recycle according to plastic type",
+    "tip": "Check local recycling guidelines for plastic codes.",
+    "why": "Recycling plastic reduces demand for new plastic production.",
+    "aliases": ["Tupperware", "Plastic Box"]
+  },
+  {
+    "item": "Printer Cartridge",
+    "category": "Hazardous",
+    "method": "Return to manufacturer or store take-back program",
+    "tip": "Avoid landfill disposal due to toxic ink residues.",
+    "why": "Cartridges can be refilled or recycled properly to reduce waste.",
+    "aliases": ["Ink Cartridge", "Laser Cartridge"]
+  },
+  {
+    "item": "Bread",
+    "category": "Compost",
+    "method": "Add to compost bin or feed to animals if safe",
+    "tip": "Avoid moldy bread in compost to prevent pests.",
+    "why": "Composting bread reduces landfill organic waste.",
+    "aliases": ["Loaf", "Bread Slice"]
+  },
+  {
+    "item": "Tin Foil",
+    "category": "Recycle",
+    "method": "Clean and recycle with metal scrap",
+    "tip": "Ball up foil to avoid loss in recycling machines.",
+    "why": "Aluminum foil can be recycled multiple times.",
+    "aliases": ["Aluminum Foil"]
+  },
+  {
+    "item": "Cooking Oil",
+    "category": "Hazardous",
+    "method": "Collect in a sealed container and take to hazardous waste facility",
+    "tip": "Do not pour down drains or into soil.",
+    "why": "Oil contaminates water and harms aquatic life.",
+    "aliases": ["Used Oil", "Vegetable Oil"]
+  },
+  {
+    "item": "Cigarette Butts",
+    "category": "Trash",
+    "method": "Dispose in general waste bin",
+    "tip": "Never throw on the ground; toxic chemicals harm the environment.",
+    "why": "Butts contain plastic filters and toxins that do not biodegrade.",
+    "aliases": ["Cigarette", "Smoked Filter"]
+  },
+  {
+    "item": "Plastic Food Wrap",
+    "category": "Trash",
+    "method": "Dispose in general waste",
+    "tip": "Not recyclable through most municipal programs.",
+    "why": "Thin plastic films clog recycling machinery.",
+    "aliases": ["Cling Film", "Saran Wrap"]
+  },
+  {
+    "item": "Chewing Gum",
+    "category": "Trash",
+    "method": "Dispose in general waste",
+    "tip": "Do not flush down toilets.",
+    "why": "Gum is not biodegradable and contaminates waterways.",
+    "aliases": []
+  },
+  {
+    "item": "Cooking Utensils (Wooden)",
+    "category": "Compost",
+    "method": "Compost if untreated wood",
+    "tip": "Avoid treated or painted wood items.",
+    "why": "Natural wood decomposes and adds organic matter to soil.",
+    "aliases": ["Wooden Spoon", "Wooden Spatula"]
+  },
+  {
+    "item": "Compact Fluorescent Lamp (CFL)",
+    "category": "Hazardous",
+    "method": "Take to hazardous waste collection points",
+    "tip": "Contains small amounts of mercury; handle carefully.",
+    "why": "Proper disposal prevents mercury contamination.",
+    "aliases": ["CFL Bulb", "Energy Saving Bulb"]
+  },
+  {
+    "item": "Cotton Swabs",
+    "category": "Trash",
+    "method": "Dispose in general waste",
+    "tip": "Avoid flushing; they cause plumbing blockages.",
+    "why": "Non-biodegradable plastic stems pollute the environment.",
+    "aliases": ["Q-tip", "Cotton Bud"]
+  },
+  {
+    "item": "Plastic Toys",
+    "category": "Recycle",
+    "method": "Recycle according to plastic type",
+    "tip": "Check local recycling policies for plastic toys.",
+    "why": "Extending toy life reduces plastic waste.",
+    "aliases": ["Plastic Playthings", "Toys"]
+  },
+  {
+    "item": "Wax Paper",
+    "category": "Trash",
+    "method": "Dispose in general waste",
+    "tip": "Wax coating prevents recycling or composting.",
+    "why": "Cannot be processed by recycling facilities.",
+    "aliases": []
+  },
+  {
+    "item": "Food Cans",
+    "category": "Recycle",
+    "method": "Rinse and place in metal recycling bin",
+    "tip": "Remove labels if possible.",
+    "why": "Steel cans can be recycled endlessly with energy savings.",
+    "aliases": ["Tin Can", "Canned Food"]
+  },
+  {
+    "item": "Disposable Diapers",
+    "category": "Trash",
+    "method": "Dispose in general waste",
+    "tip": "Do not flush or compost.",
+    "why": "Non-biodegradable and contains human waste.",
+    "aliases": ["Nappies"]
+  }
+]
