@@ -10,20 +10,61 @@
 <h1>EcoSort</h1>
 <p class="tagline">Your quick guide to sorting everyday items ♻️</p>
 
+<!-- Search Bar -->
 <div class="search-bar">
     <input type="text" id="searchInput" placeholder="Search for an item: plastic bottle, banana peel, batteries..." />
     <button id="searchBtn">Search</button>
 </div>
 
+<!-- Results Section -->
 <div id="results" class="results">
     <p>No results yet. Type an item above to see how to dispose of it.</p>
 </div>
 
+<!-- Filter Cards -->
 <div class="filters">
-    <button onclick="renderResults(wasteData)">Browse all items</button>
-    <button onclick="filterByCategory('Recycle')">♻️ Recycle</button>
-    <button onclick="filterByCategory('Trash')">🗑️ Trash</button>
-    <button onclick="filterByCategory('Compost')">🌱 Compost</button>
+    <!-- Recycle Card -->
+    <div class="filter-card" onclick="filterByCategory('Recycle')">
+        <div class="filter-card-inner">
+            <div class="filter-card-front recycle">♻️ Recycle</div>
+            <div class="filter-card-back recycle">
+                <p>Items that can be converted into reusable material.</p>
+                <p>Click to see recyclable items</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trash Card -->
+    <div class="filter-card" onclick="filterByCategory('Trash')">
+        <div class="filter-card-inner">
+            <div class="filter-card-front trash">🗑️ Trash</div>
+            <div class="filter-card-back trash">
+                <p>Items that can't be recycled or composted and need to be trashed.</p>
+                <p>Click to see trash items</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compost Card -->
+    <div class="filter-card" onclick="filterByCategory('Compost')">
+        <div class="filter-card-inner">
+            <div class="filter-card-front compost">🌱 Compost</div>
+            <div class="filter-card-back compost">
+                <p>Items that naturally decompose to enrich soil.</p>
+                <p>Click to see compostable items</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Items Card -->
+    <div class="filter-card" onclick="renderResults(wasteData)">
+        <div class="filter-card-inner">
+            <div class="filter-card-front all">📦 All Items</div>
+            <div class="filter-card-back all">
+                Click to browse all items
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer>
