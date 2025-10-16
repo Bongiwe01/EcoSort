@@ -2,24 +2,34 @@
 const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 const resultsSection = document.getElementById('results');
+const navLinks = document.querySelectorAll('nav a');
 
 // Current category filter state
 let currentCategory = 'all';
 let wasteData = []; // filled from JSON
 
+// Highlight active nav link
+navLinks.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add('active');
+  }
+});
+
 // Load JSON data on page load
 window.addEventListener('DOMContentLoaded', () => {
-  fetch('data/waste_items.json') // your JSON file path
-    .then(response => response.json())
-    .then(data => {
-      wasteData = data;
-      // Show empty state initially
-      resultsSection.innerHTML = '<p>No results yet. Type an item above to see how to dispose of it.</p>';
-    })
-    .catch(err => {
-      resultsSection.innerHTML = '<p>Failed to load data. Please try again later.</p>';
-      console.error('Error loading JSON:', err);
-    });
+  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+    fetch('data/waste_items.json') // your JSON file path
+      .then(response => response.json())
+      .then(data => {
+        wasteData = data;
+        // Show empty state initially
+        resultsSection.innerHTML = '<p>No results yet. Type an item above to see how to dispose of it.</p>';
+      })
+      .catch(err => {
+        resultsSection.innerHTML = '<p>Failed to load data. Please try again later.</p>';
+        console.error('Error loading JSON:', err);
+      });
+  }
 });
 
 // Render results

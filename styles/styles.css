@@ -1,4 +1,4 @@
-/* General reset */
+/* ------------------ GENERAL RESET ------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -10,29 +10,86 @@ body {
   background-color: #f4f9f4;
   color: #333;
   text-align: center;
-  padding: 20px;
   line-height: 1.6;
 }
 
-/* Header */
-h1 {
-  font-size: 3rem;
-  color: #2e7d32; /* green accent */
-  margin-bottom: 10px;
+/* ------------------ HEADER ------------------ */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------------ LOGO ------------------ */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2e7d32;
+  letter-spacing: 1px;
+}
+
+/* ------------------ NAVIGATION ------------------ */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+}
+
+/* ------------------ HOME SECTION ------------------ */
+#home {
+  background: linear-gradient(rgba(46, 125, 50, 0.1), rgba(46, 125, 50, 0.1)),
+    url("https://images.unsplash.com/photo-1549989476-69a92fa57c34?auto=format&fit=crop&w=1400&q=80")
+      center/cover no-repeat;
+  padding: 100px 20px;
+  color: #2e7d32;
 }
 
 .tagline {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2e7d32;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Search Bar */
+/* ------------------ SEARCH BAR ------------------ */
 .search-bar {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin: 40px auto;
   gap: 10px;
 }
 
@@ -43,6 +100,12 @@ h1 {
   border: 2px solid #2e7d32;
   border-radius: 8px;
   font-size: 1rem;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: #256428;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
 }
 
 .search-bar button {
@@ -60,7 +123,7 @@ h1 {
   background-color: #256428;
 }
 
-/* Results Section */
+/* ------------------ RESULTS SECTION ------------------ */
 .results {
   margin: 20px auto;
   padding: 20px;
@@ -71,7 +134,7 @@ h1 {
   min-height: 100px;
 }
 
-/* ----------- FILTER CARDS ----------- */
+/* ------------------ FILTER CARDS ------------------ */
 .filters {
   display: flex;
   justify-content: center;
@@ -80,16 +143,14 @@ h1 {
   margin: 30px 0;
 }
 
-/* Card wrapper */
 .filter-card {
   background: transparent;
   width: 180px;
-  height: 220px;          
+  height: 220px;
   perspective: 1000px;
   cursor: pointer;
 }
 
-/* Inner part that flips */
 .filter-card-inner {
   position: relative;
   width: 100%;
@@ -97,15 +158,13 @@ h1 {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Flip on hover */
 .filter-card:hover .filter-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Front and back faces */
 .filter-card-front,
 .filter-card-back {
   position: absolute;
@@ -121,31 +180,304 @@ h1 {
   font-size: 1rem;
   color: #fff;
   backface-visibility: hidden;
-  word-wrap: break-word;
 }
 
-/* Front face: solid colors */
-.filter-card-front.recycle { background-color: #56ab2f; }   /* green */
-.filter-card-front.trash { background-color: #778899; }     /* gray */
-.filter-card-front.compost { background-color: #8b4513; }   /* brown */
-.filter-card-front.all { background-color: #fd5800; }       /* dark green */
+.filter-card-front.recycle,
+.filter-card-back.recycle {
+  background-color: #56ab2f;
+}
 
-/* Back face: same solid colors as front */
-.filter-card-back.recycle { background-color: #56ab2f; }
-.filter-card-back.trash { background-color: #778899; }
-.filter-card-back.compost { background-color: #8b4513; }
-.filter-card-back.all { background-color: #fd5800; }
+.filter-card-front.trash,
+.filter-card-back.trash {
+  background-color: #778899;
+}
+
+.filter-card-front.compost,
+.filter-card-back.compost {
+  background-color: #8b4513;
+}
+
+.filter-card-front.all,
+.filter-card-back.all {
+  background-color: #fd5800;
+}
 
 .filter-card-back {
   transform: rotateY(180deg);
-  gap: 15px;  /* space between description and instruction */
+  gap: 10px;
 }
 
-/* Footer */
+/* ------------------ ABOUT PAGE ------------------ */
+.about-section {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: left;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+  color: #2e7d32;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  color: #256428;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-section p,
+.about-section li {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section li {
+  margin-bottom: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.stats div {
+  text-align: center;
+  background: #f4f9f4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.stats span {
+  display: block;
+  font-size: 2rem;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ------------------ HOW IT WORKS PAGE ------------------ */
+.how-it-works {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.how-it-works h1 {
+  color: #2e7d32;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.how-it-works h2 {
+  color: #256428;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.how-it-works h3 {
+  color: #2e7d32;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.how-it-works p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.steps .step {
+  margin-bottom: 20px;
+}
+
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.category-card {
+  background: #f4f9f4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.category-card .emoji {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.pro-tips .tips {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pro-tips .tips .do,
+.pro-tips .tips .dont {
+  flex: 1;
+  min-width: 250px;
+  background: #f4f9f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ------------------ CTA SECTION ------------------ */
+.cta-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #256428;
+}
+
+/* ------------------ CONTACT FORM ------------------ */
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #2e7d32;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px 25px;
+  background-color: #2e7d32;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #256428;
+}
+
+.form-message {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #2e7d32;
+}
+
+/* ------------------ FAQ SECTION ------------------ */
+.faq-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.faq-section h2 {
+  color: #2e7d32;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ------------------ FOOTER ------------------ */
 footer {
   margin-top: 40px;
   padding: 20px;
   font-size: 0.9rem;
   color: #555;
   border-top: 1px solid #ddd;
+  background-color: #fefefe;
+}
+
+/* ------------------ RESPONSIVE DESIGN ------------------ */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  #home {
+    padding: 60px 10px;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
 }
